@@ -49,7 +49,7 @@ const App = () => {
     };
     fetchUser();
     fetchBlogs();
-  }, [isAuthenticated, user]);
+  }, [isAuthenticated]);
   return (
     <>
       <BrowserRouter>
