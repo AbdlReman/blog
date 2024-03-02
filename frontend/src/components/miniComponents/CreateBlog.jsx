@@ -97,7 +97,7 @@ const CreateBlog = () => {
 
     try {
       const { data } = await axios.post(
-        "https://blog-codermastery.vercel.app/api/v1/blog/post",
+        "https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/post",
         formData,
         {
           withCredentials: true,

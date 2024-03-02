@@ -29,7 +29,7 @@ const UpdateBlog = () => {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          `https://blog-codermastery.vercel.app/api/v1/blog/singleblog/${id}`,
+          `https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/singleblog/${id}`,
           { withCredentials: true }
         );
         setTitle(data.blog.title);
@@ -105,7 +105,7 @@ const UpdateBlog = () => {
 
     try {
       const { data } = await axios.put(
-        `https://blog-codermastery.vercel.app/api/v1/blog/update/${id}`,
+        `https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/update/${id}`,
         updatedBlog,
         { withCredentials: true }
       );

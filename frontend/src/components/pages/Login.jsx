@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     await axios
       .post(
-        "https://blog-codermastery.vercel.app/api/v1/user/login",
+        "https://cute-rose-firefly-wig.cyclic.app/api/v1/user/login",
         { email, password, role },
         {
           withCredentials: true,

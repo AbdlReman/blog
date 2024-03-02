@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "https://blog-codermastery.vercel.app/api/v1/user/myprofile",
+          "https://cute-rose-firefly-wig.cyclic.app/api/v1/user/myprofile",
           {
             withCredentials: true,
           }
@@ -39,7 +39,7 @@ const App = () => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "https://blog-codermastery.vercel.app/api/v1/blog/all",
+          "https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/all",
           { withCredentials: true }
         );
         setBlogs(data.allBlogs);

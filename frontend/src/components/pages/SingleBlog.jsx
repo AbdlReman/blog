@@ -11,7 +11,7 @@ const SingleBlog = () => {
     const getSingleBlog = async () => {
       try {
         const { data } = await axios.get(
-          `https://blog-codermastery.vercel.app/api/v1/blog/singleblog/${id}`,
+          `https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/singleblog/${id}`,
           { withCredentials: true }
         );
         setBlog(data.blog);

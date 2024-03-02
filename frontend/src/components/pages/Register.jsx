@@ -41,7 +41,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        "https://blog-codermastery.vercel.app/api/v1/user/register",
+        "https://cute-rose-firefly-wig.cyclic.app/api/v1/user/register",
         formData,
         {
           withCredentials: true,

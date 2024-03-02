@@ -10,7 +10,7 @@ const MyBlogs = () => {
   useEffect(() => {
     const fetchMyBlogs = async () => {
       const { data } = await axios.get(
-        "https://blog-codermastery.vercel.app/api/v1/blog/myblogs",
+        "https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/myblogs",
         { withCredentials: true }
       );
       setMyBlogs(data.blogs);
@@ -20,9 +20,12 @@ const MyBlogs = () => {
 
   const deleteBlogHandler = async (id) => {
     await axios
-      .delete(`https://blog-codermastery.vercel.app/api/v1/blog/delete/${id}`, {
-        withCredentials: true,
-      })
+      .delete(
+        `https://cute-rose-firefly-wig.cyclic.app/api/v1/blog/delete/${id}`,
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         toast.success(res.data.message);
         setMyBlogs((prevBlogs) => prevBlogs.filter((blog) => blog._id !== id));

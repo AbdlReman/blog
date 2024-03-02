@@ -7,7 +7,7 @@ const PopularAuthors = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       const { data } = await axios.get(
-        "https://blog-codermastery.vercel.app/api/v1/user/authors",
+        "https://cute-rose-firefly-wig.cyclic.app/api/v1/user/authors",
         { withCredentials: true }
       );
       setAuthors(data.authors);
