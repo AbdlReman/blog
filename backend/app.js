@@ -13,7 +13,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://blog-codermastery.vercel.app",
     methods: ["GET", "PUT", "DELETE", "POST"],
     credentials: true,
   })
